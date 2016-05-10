@@ -1,0 +1,28 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+//
+//
+body {
+  background-color:#FBFBFB !important;
+}
+
+.container {
+  background-color: #FFF;
+  margin: auto;
+  width:300px;
+
+}
+
+.card {
+  border-radius: 5px;
+  border: solid 1px #E6E6E6;
+  padding: 10px;
+  margin-bottom:20px
+}
+
+.task-name {
+  color:white;
+
+}
+

@@ -1,0 +1,16 @@
+<div class="container text-center">
+  <h1>Edit task</h1>
+  <div class="card" style="background-color:rgb(<%=rand(120..240)%>,<%=rand(120..240)%>,<%=rand(120..240)%>)">
+      <%= form_for(@task) do |task| %>
+        <%= task.text_field :name %>
+        <%= task.check_box :done %>
+        <%= task.submit %>
+
+      <% end %>
+  </div>
+  <%= link_to "Back home",  tasks_path %>
+</div>
+
+
+
+

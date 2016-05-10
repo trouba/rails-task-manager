@@ -1,0 +1,10 @@
+<div class="container text-center">
+  <h1>Create task</h1>
+  <div class="card">
+    <%= form_for(@task) do |task| %>
+      <%= task.text_field :name %>
+      <%= task.submit %>
+    <% end %>
+  </div>
+  <%= link_to "Back home",  tasks_path %>
+</div>

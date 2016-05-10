@@ -1,0 +1,12 @@
+<div class="container text-center">
+  <h1>My tasks</h1>
+  <% @tasks.each do |task| %>
+  <div class="card" style="background-color:rgb(<%=rand(120..240)%>,<%=rand(120..240)%>,<%=rand(120..240)%>)">
+    <h3><%= link_to task.name.capitalize, task_path(task)%></h3>
+    <p><%= task.created_at.strftime("%B %d, %Y")%></p>
+    <%= check_box_tag "name", "value", task.done, disabled: true %>
+  </div>
+  <% end %>
+  <%= link_to "New task", new_task_path, class: "btn btn-success"%>
+</div>
+
